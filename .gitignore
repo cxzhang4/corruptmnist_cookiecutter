@@ -169,6 +169,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# use dvc to track data
 data/
 
 # PyCharm

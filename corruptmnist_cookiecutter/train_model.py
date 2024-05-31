@@ -24,7 +24,7 @@ def train(lr, batch_size, epochs) -> None:
     train_images = torch.load(f"data/processed/corruptmnist_cookiecutter/train_images.pt")
     train_target = torch.load(f"data/processed/corruptmnist_cookiecutter/train_target.pt")
     train_ds = torch.utils.data.TensorDataset(train_images, train_target)
-    # print(train_ds)
+    print(train_ds.__len__())
 
     # create the dataloader
     train_dataloader = torch.utils.data.DataLoader(train_ds, batch_size=batch_size)

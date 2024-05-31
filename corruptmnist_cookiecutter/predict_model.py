@@ -44,6 +44,7 @@ def predict_and_save(model_path: str, data_path: str):
     model.load_state_dict(torch.load(model_path))
     # load data
     test_images_ds = torch.load(data_path)
+    print(test_images_ds.__len__())
     test_images_ds = test_images_ds.to(DEVICE)
     test_dataloader = torch.utils.data.DataLoader(test_images_ds, batch_size=32)
 
