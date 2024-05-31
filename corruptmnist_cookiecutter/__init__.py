@@ -1,0 +1,2 @@
+from corruptmnist_cookiecutter.models.model import SimpleCNN
+from corruptmnist_cookiecutter.predict_model import predict
