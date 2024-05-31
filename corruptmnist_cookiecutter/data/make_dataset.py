@@ -69,8 +69,6 @@ def make_data_v2(raw_dir: str, processed_dir: str):
 
     train_images = standardize(train_images)
 
-    print(train_images.size())
-
     torch.save(train_images, f"{processed_dir}/train_images.pt")
     torch.save(train_target, f"{processed_dir}/train_target.pt")
 
